@@ -1,0 +1,132 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+  
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(244, 38%, 16%);
+    color: aliceblue;
+    margin: auto auto ;
+    width: 80%;
+    height: 95%;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px ;
+}
+
+.part2{
+    background-image: url(images/image-header-desktop.jpg);
+    width: 100%;
+    min-height: 40%;
+    background-color: hsl(277, 64%, 61%);
+    background-blend-mode: overlay ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px  15px 0px 0px;
+}
+
+.part1{
+    order: 1;
+}
+
+.part1 h1{
+     font-size: calc(1vw + 1.4rem); 
+     letter-spacing: 5px;
+     
+width: 100%;
+color: hsl(0, 0%, 100%);
+}
+
+.part12{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+   margin: auto auto ;
+}
+
+.part1 h1 span{
+    color: hsla(0, 0%, 100%, 0.6) ;
+}
+
+.bo, .part1 p{
+   color:  hsla(0, 0%, 100%, 0.75);
+}
+
+.part1 {
+    color:hsl(0, 0%, 100%);
+    height: 90%;
+    margin: 0 auto;
+   
+}
+.part1 p{
+    font-size: calc(1vw + .8rem);
+    font-weight: 700;
+    width: 100%;
+}
+
+.preview p{
+    color:  hsl(0, 0%, 100%) ;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+  @media (min-width: 1000px) {
+      
+body{
+    overflow-y: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 80% ;
+    height: 70%;
+   align-content: center;
+    margin: auto;
+    background-color:hsl(244, 38%, 16%) ;
+    border-radius: 0;
+}
+.part1{
+   width: 100%;
+   height: 100%; 
+   order: 0;
+  
+
+}
+.part2{
+    border-radius: 0;
+}
+.part1 h1{
+     font-size: calc(1vw + 2rem);
+}
+
+ .part12{
+    text-align: justify;
+    justify-content: center;
+  
+} 
+
+
+.part1 p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.preview{
+    display: flex;
+    justify-content: space-between;
+    
+     padding-right: 100px; 
+}
+
+
+
+  }
